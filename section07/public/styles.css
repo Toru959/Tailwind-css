@@ -424,6 +424,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 *, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -439,17 +441,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.w-\[32rem\] {
+  width: 32rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
-.bg-lime-500\/80 {
-  background-color: rgb(132 204 22 / 0.8);
+.border {
+  border-width: 1px;
 }
 
-.bg-lime-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
+.border-red-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
 }
 
 .bg-lime-500\/50 {
@@ -479,14 +501,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-cyan-300 {
   --tw-text-opacity: 1;
   color: rgb(103 232 249 / var(--tw-text-opacity));
-}
-
-.text-cyan-300\/80 {
-  color: rgb(103 232 249 / 0.8);
-}
-
-.text-cyan-300\/50 {
-  color: rgb(103 232 249 / 0.5);
 }
 
 .text-white {
